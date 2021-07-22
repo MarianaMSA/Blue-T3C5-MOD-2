@@ -9,9 +9,12 @@
 
 /*Comentário*/ 
 nav{
-    background-color: #218c74;
+    background-color: #25a244;
    /* margin-left: 1.4rem;*/
-   padding: 1rem;
+   padding: .5vw .5vw .5vw ;
+   border-radius: 0 0 7% 7%;
+   position: fixed;
+   width: 100%;
 }
 
 nav ul{
@@ -22,9 +25,462 @@ nav ul{
 
 nav ul li{
     padding: 1rem;
+    font-weight: 600;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header div#fraseMotivacional1 {
+    padding: 5vw;
+    margin: 4vw;
+    margin-top: 15vw;
+    color: #25a244;
+    
+}
+
+header div#fraseMotivacional1 p{
+    font-weight: 600;
+    
+}
+
+header div#imagemFrase img{
+    width: 60%;
+    margin: 5vw 0 5vw 5vw;
+    align-items: center;
+
+}
+
+section#sobreMim{
+    background-color: #10451d;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: last baseline;
+   
+}
+
+section#sobreMim div#foto3x4 img{
+    border-radius: 650%;
+    margin: 2vw;
+}
+
+section#sobreMim div#txtSobreMim p {
+    margin: 6vw;
+    padding: 3vw;
+
+}
+
+section#projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background-color: #b7efc5; */
+    color: #25a244;
+   
+}
+
+section#projetos div{
+    padding: 1vw;
+    text-align: center;
+   
+}
+
+section#projetos div img{
+    width: 60%;
+    border-radius: 0 10% 0 10%;
+    
+}
+
+section#projetos div button{
+    border: 2px solid white;
+    background-color: #25a244;
+    color: white;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 600;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .6s ease-out;
+ }
+
+section#projetos div button:hover{
+    background-color: white;
+    color: #25a244;
+    transform: scale(1.5);
+ }
+
+section#hardSkills{
+    padding: 3rem 10rem 3rem 10rem;
+    background-color: #10451d;
+    color: white;
+ }
+
+section#hardSkills h2{
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+ }
+
+section#hardSkills p{
+    padding: 1.5vw;
+    font-size: 1.3rem;
+    font-weight: 600;
+ }
+section#hardSkills div{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1rem;
+ }
+ 
+section#hardSkills div span#python{
+    background-color: white;
+    color: #10451d;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 70%;
+ }
+ 
+section#hardSkills div span#html{
+    background-color: white;
+    color: #10451d;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 75%;
+ }
+ 
+section#hardSkills div span#css{
+    background-color: white;
+    color: #10451d;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 50%;
+ }
+
+section#hardSkills div span#js{
+    background-color: white;
+    color: #10451d;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 30%;
+ }
+ 
+ 
+section#softSkills{
+    padding: 3rem 10rem 3rem 10rem;
+    background-color: white;
+    color: #25a244;
+
+ }
+
+section#hardSkills div{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1rem;
+ }
+ 
+
+section#softSkills h2{
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+ }
+
+section#softSkills p{
+    padding: 1.5vw;
+    font-size: 1.3rem;
+    font-weight: 600;
+ }
+section#softSkills div{
+    display: flex;
+    border: 1px solid #25a244;
+    border-radius: 1rem;
+ }
+
+section#softSkills div span#capacidadeAnalitica{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 70.14%;
+ }
+section#softSkills div span#pensamentoConceitual{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 66.25%;
+ }
+section#softSkills div span#reflexao{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 76.42%;
+ }
+
+section#softSkills div span#pensamentoCriativo{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 89.44%;
+ }
+
+section#softSkills div span#planejamentoOrganizacao{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 85.45%;
+ }
+section#softSkills div span#comunicacao{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 64.38%;
+ }
+section#softSkills div span#consideracaoPelosOutros{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 86.55%;
+ }
+section#softSkills div span#influencia{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 95.41%;
+ }
+section#softSkills div span#sociabilidade{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 96.33%;
+ }
+section#softSkills div span#facilitacao{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 70.61%;
+ }
+section#softSkills div span#flexibilidade{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 96.75%;
+ }
+section#softSkills div span#estabilidadeEmocional{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 98.31%;
+ }
+section#softSkills div span#ambicao{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 95.69%;
+ }
+section#softSkills div span#iniciativa{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 90.5%;
+ }
+
+section#softSkills div span#assertividade{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 77.89%;
+ }
+
+section#softSkills div span#tomadaDeRiscos{
+    background-color: #25a244;
+    color: white;
+    text-align: end;
+    padding: .5rem;
+    border-radius: 1rem;
+    width: 82.09%;
+ }
+
+section#softSkills div#resultadoSoftSkills{
+    width: 100%;
+    display: flex;
+    color:#25a244;
+    border: none;
+    text-align: center;
+    padding-top: 2rem;
+}
+section#softSkills div#resultadoSoftSkills a{
+    text-decoration: none;
+    color:#25a244;
+}
+section#contato {
+    padding: 3rem 10rem 3rem 10rem;
+    background-color: #25a244;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    color: white;
+ }
+ 
+section#contato div#redes{
+    width: 100%; 
+}
+
+section#contato div#redes h3{
+    text-align: center;
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+}
+
+section#contato div#redes div#icons{
+display: flex;
+justify-content: center;
+}
+
+section#contato div#redes div#icons a{
+text-decoration: none; 
+color: #25a244;
+font-size: 4rem;
+padding: 2rem;
+transition: all .4s ease-out; 
+}
+
+
+section#contato div#redes div#icons a:hover{
+color: #76c58a;
+}
+
+section#contato div#redes div#icons a i{
+transition: all .4s ease-out;
+}
+
+
+section#contato div#redes div#icons a i:hover{
+transform: scale(1.2);
+}
+
+section#contato div#form{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+section#contato div#form h3{
+width: 100%;
+text-align: center;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+color: white;
+}
+
+section#contato div#form form{
+width: 50%;
+}
+
+
+section#contato div#form form input, textarea{
+width: 100%;
+padding: .5rem;
+font-size: 1.2rem;
+border: 1px solid #ccc;
+margin-top: .5rem;
+margin-bottom: 1rem;
+outline: none; 
+color: white;
+border-radius: 1rem;
+}
+
+section#contato div#form form label{
+font-size: 1.2rem;
+}
+
+section#contato div#form form button{
+border: 1px solid #25a244;
+background-color: #fff;
+color: #25a244;
+padding: 1rem;
+font-size: .8vw;
+font-weight: 600;
+border-radius: .5rem;
+display: block;
+margin: auto;
+cursor: pointer;
+transition: .6s ease-out;
+width: 40%;
+}
+
+section#contato div#form form button:hover{
+background-color: #25a244;
+color: #fff;
+transform: scale(1.2);
+}
+
+footer{
+    background-color: #25a244;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    
+}
+
+/* 
+section#projetos div#projetoVotacao img{
+    width: 80%;
+    border-radius: 0 10% 0 10%;
+    padding-bottom: 5vw;
+}
+section#projetos div#projetoJokenpo img{
+    width: 100%;
+    border-radius: 0 10% 0 10%;
+}
+section#projetos div#projetoVotacao h2{
+   margin-top: 1vw;
+} */
+
+/* section#hardSkills{
+
+} */

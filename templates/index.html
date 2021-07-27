@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang = "pt-br" >
     <head>
-        <meta charset="UTF - 8">
-        <title>Portifólio</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio da Mari</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <!--Comentário-->
     <body>
-        <nav>
+        <nav id="menu">
                 <ul>
                     <li><a href="#fraseMotivacional1">Início</a></li>
                     <li><a href = "#sobreMim">Sobre mim</a></li>
@@ -27,17 +30,23 @@
                 <span>Joel Jota</span>
             </div>
             <div id="imagemFrase">
-                <img src="./assets/img/cssJs.png" alt="Mulher Lançando o foguete pelo computador">
+                <img src="../static/img/cssJs.png" alt="Mulher Lançando o foguete pelo computador">
             </div>
         </header>
         <section id = "sobreMim">
             <div id = "foto3x4">
-                <img src="./assets/img/fotoMariana.png" alt="Foto Mariana 3x4">
-
+                <img id="primeiraFoto" src="../static/img/fotoMariana.png" alt="Foto Mariana 3x4">
+                <img id="segundaFoto" src="../static/img/fotoMariana1.png" alt="Foto Mariana 3x4">
             </div>
             <div id="txtSobreMim">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sequi aliquam? Minima quaerat, fugiat sit quam deserunt excepturi numquam consequuntur facilis quisquam ad delectus blanditiis consequatur quibusdam reiciendis? Aperiam, alias. 
+                    Ei!
+
+Sou a Mariana, tenho 30 anos, nasci em BH .
+Sou empática, comunicava, engraçada e curiosa,.
+Estou em transição de carreira.
+Descobri o mundo da tecnologia e me encantei, com a rede de apoio e com sua facilidade de melhorar as nossas vidas.
+Atualmente trabalho como técnica de apoio gerencial no cliente e estudo em uma edTech após o horário de trabalho.
                 </p>
             </div>
 
@@ -46,23 +55,23 @@
         <section id="projetos">
 
             <div id="projetoAda">
-                <img src="./assets/img/adaPintura1.png" alt="Ada Lovelace">
+                <img src="../static/img/adaPintura1.png" alt="Ada Lovelace">
                 <h2>Site Ada Lovelace</h2>
                 <p>Primeiro projeto usando HTML5, CSS3 e JS. Conta a história de Ada, quem escreveu o promeiro algoritimo interpretado por máquina. #GRLPWR!</p>
-                <button>Veja mais</button> 
+                <a href="https://github.com/MarianaMSA/siteAda"><button >Veja mais</button></a>
             </div>
             <div id="projetoVotacao">
-                <img src="./assets/img/urna.png" alt="Urna eletrônica">
+                <img src="../static/img/urna.png" alt="Urna eletrônica">
                 <h2>Projeto Votação</h2>
                 <p>Projeto utilizando Python. Calcula quantos votos são inseridos, o candidato vencedor e se tem eleitor para o próximo voto.</p>
-                <button>Veja mais</button> 
+                <a href="https://github.com/MarianaMSA/Votacao"><button>Veja mais</button></a> 
 
             </div>
             <div id="projetoJokenpo"> 
-                <img src="./assets/img/jokenpo.png" alt ="Mãos jogando Jokenpo">
+                <img src="../static/img/jokenpo.png" alt ="Mãos jogando Jokenpo">
                 <h2>Projeto Jokenpo</h2>
                 <p>Jogo criado utilizando Python. Recebe as informações do jogador e joga com ele.</p>
-                <button>Veja mais</button>
+                <a href="https://github.com/MarianaMSA/jokenpo"><button>Veja mais</button></a> 
             </div>
             
         </section>
@@ -167,15 +176,15 @@
                 <h3>Concte-se comigo:</h3>
                 <div id="icons">
                     
-                    <a href="https://www.linkedin.com/in/thicode/" target="_blank"> 
+                    <a href="https://www.linkedin.com/in/mariana-salvador-assis/" target="_blank"> 
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i> 
                     </a>
             
-                    <a href="https://github.com/codethi" target="_blank"> 
-                        <i class="fa fa-github" aria-hidden="true"></i> 
+                    <a href="https://github.com/MarianaMSA" target="_blank"> 
+                        <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
             
-                    <a href="https://www.instagram.com/thi.code/" target="_blank"> 
+                    <a href="https://www.instagram.com/marianamsalvador/" target="_blank"> 
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -186,31 +195,43 @@
     
                 <h3>Mande uma mensagem</h3>
     
-                <form>
+                <form action="/send" method="POST">
     
-                <label for="nome">Nome :</label>
-                <input id="nome" name="nome" type="text">
-    
-                <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email">
-    
-                <label for="mensagem">Mensagem :</label>
-                <textarea name="mensagem" id="mensagem" cols="10" rows="5"></textarea>
-    
-                <button id="enviar">Enviar</button>
+                    <label for="nome">Nome :</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+        
+                    <label for="mensagem">Mensagem :</label>
+                    <textarea type="text" id="mensagem" name="mensagem" placeholder="Digite uma mensagem" cols="10" rows="5"></textarea>
+        
+                    <button type="submit" id= "enviar">Enviar</button>
     
                 </form>
     
-            </div>      
-         
+            </div>   
+
         </section>
         <footer>
             <p> ©Todos os direitos reservados - Mariana Maia Salvador de Assis</p>
         </footer>
+
+        <script src="../static/js/index.js"></script>
         
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 

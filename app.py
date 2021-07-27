@@ -26,7 +26,7 @@ class Contato:
 
 @app.route('/')
 def index():
-   return render_template('index.html')
+   return render_template('send.html', formContato=formContato)
 
 
 @app.route('/send', methods=['GET', 'POST'])

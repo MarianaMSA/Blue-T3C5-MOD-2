@@ -23,10 +23,10 @@ class Contato:
       self.email = email
       self.mensagem = mensagem
 
-
+formContato = ""
 @app.route('/')
 def index():
-   return render_template('send.html', formContato=formContato)
+   return render_template('index.html')
 
 
 @app.route('/send', methods=['GET', 'POST'])
@@ -48,7 +48,7 @@ def send():
       )
       mail.send(msg)
 
-   return redirect('/')
+   return render_template('send.html',formContato = formContato)
 
 if __name__ == '__main__':
    app.run(debug=True)
